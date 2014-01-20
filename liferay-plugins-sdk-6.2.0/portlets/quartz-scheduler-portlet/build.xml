@@ -2,5 +2,5 @@
 <!DOCTYPE project>
 
 <project name="quartz-scheduler-portlet" basedir="." default="deploy">
-	<import file="/Users/steven.barba/Documents/Personal/git/Liferay/liferay-plugins-sdk-6.2.0/portlets/build-common-portlet.xml" />
+	<import file="../build-common-portlet.xml" />
 </project>
