@@ -368,3 +368,15 @@ liferay-plugins-sdk-6.2.0/.ivy/cache/xalan/xalan/ivy-2.7.1.xml
 liferay-plugins-sdk-6.2.0/.ivy/cache/xalan/serializer/ivydata-2.7.1.properties
 
 liferay-plugins-sdk-6.2.0/lib/xml-apis.jar
+
+liferay-plugins-sdk-6.2.0/hooks/example-hook/*
+
+liferay-plugins-sdk-6.2.0/portlets/google-app-engine-portlet/*
+
+liferay-plugins-sdk-6.2.0/portlets/jira-client-portlet/*
+
+liferay-plugins-sdk-6.2.0/portlets/speech-app-portlet/*
+
+liferay-plugins-sdk-6.2.0/portlets/google-app-engine/*
+
+liferay-plugins-sdk-6.2.0/portlets/test-read-portlet/*
