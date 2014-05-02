@@ -1,9 +1,27 @@
+<%--
+	/**
+	 * Copyright (C) 2005-2014 Rivet Logic Corporation.
+	 * 
+	 * This program is free software; you can redistribute it and/or modify it under
+	 * the terms of the GNU General Public License as published by the Free Software
+	 * Foundation; version 3 of the License.
+	 * 
+	 * This program is distributed in the hope that it will be useful, but WITHOUT
+	 * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+	 * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+	 * details.
+	 * 
+	 * You should have received a copy of the GNU General Public License along with
+	 * this program; if not, write to the Free Software Foundation, Inc., 51
+	 */
+--%>
+
 <%@page import="com.rivetlogic.speech.bean.CommandBean"%>
 <%@page import="java.util.List"%>
 <%@page import="com.rivetlogic.speech.util.SpeechUtil"%>
 <%@include file="init.jsp" %>
 <%
-	List<CommandBean> commandBeans = (List<CommandBean>) request.getAttribute("commandList");
+	List<CommandBean> commandBeans = (List<CommandBean>) request.getAttribute("command_list");
 %>
 <aui:fieldset label="command-list">
 	<liferay-ui:search-container delta="10" emptyResultsMessage="no-commands-were-found">
@@ -21,13 +39,13 @@
 				<liferay-ui:icon-menu>
 					<portlet:renderURL var="editURL">
 						<portlet:param name="mvcPath" value="/html/speech/edit.jsp" />
-						<portlet:param name="command-key" value="${command.commandKey}"/>
-						<portlet:param name="command-value" value="${command.commandValue}"/>
+						<portlet:param name="command_key" value="${command.commandKey}"/>
+						<portlet:param name="command_value" value="${command.commandValue}"/>
 					</portlet:renderURL>
 					<liferay-ui:icon image="edit" url="${editURL}"/>
 					<portlet:actionURL name="deleteAction" var="deleteURL">
-						<portlet:param name="command-key" value="${command.commandKey}"/>
-						<portlet:param name="command-value" value="${command.commandValue}"/>
+						<portlet:param name="command_key" value="${command.commandKey}"/>
+						<portlet:param name="command_value" value="${command.commandValue}"/>
 					</portlet:actionURL>
 					<liferay-ui:icon-delete url="${deleteURL}"/>
 				</liferay-ui:icon-menu>

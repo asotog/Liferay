@@ -219,17 +219,18 @@ String toggleControlsState = GetterUtil.getString(SessionClicks.get(request, "li
 
 	<%@ include file="/html/portlet/dockbar/view_user_panel.jspf" %>
 </aui:nav-bar>
-<c:if test="<%= !layout.getGroup().isControlPanel() && themeDisplay.isSignedIn() %>">
-	<div id="results" class="results">
-</c:if>
-<c:if test="<%= layout.getGroup().isControlPanel() && themeDisplay.isSignedIn() %>">
-	<div id="results" class="results2">
-</c:if>
+	<!-- BEGIN RIVET LOGIC CODE -->
+	<c:if test="<%= !layout.getGroup().isControlPanel() && themeDisplay.isSignedIn() %>">
+		<div id="results" class="results">
+	</c:if>
+	<c:if test="<%= layout.getGroup().isControlPanel() && themeDisplay.isSignedIn() %>">
+		<div id="results" class="results2">
+	</c:if>
 		<span id="final_span" class="final"></span>
 		<span id="interim_span" class="interim"></span>
 		<p>
 	</div>
-
+	<!-- END RIVET LOGIC CODE -->
 <div class="dockbar-messages" id="<portlet:namespace />dockbarMessages">
 	<div class="header"></div>
 

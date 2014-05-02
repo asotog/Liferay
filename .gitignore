@@ -380,3 +380,13 @@ liferay-plugins-sdk-6.2.0/portlets/speech-app-portlet/*
 liferay-plugins-sdk-6.2.0/portlets/google-app-engine/*
 
 liferay-plugins-sdk-6.2.0/portlets/test-read-portlet/*
+
+liferay-plugins-sdk-6.2.0/ext/test-ext/*
+
+liferay-plugins-sdk-6.2.0/hooks/test-hook/*
+
+liferay-plugins-sdk-6.2.0/layouttpl/test-layouttpl/*
+
+liferay-plugins-sdk-6.2.0/portlets/test-portlet/*
+
+liferay-plugins-sdk-6.2.0/themes/test-theme/*
